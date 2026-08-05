@@ -1,12 +1,17 @@
 # Varghese John — Data Portfolio
 
-ICT Systems and Data Analyst Professional (8+ years across aged care systems, enterprise ICT,
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
+
+ICT Systems Support Professional (8+ years across aged care systems, enterprise ICT,
 and IT support) transitioning into data analytics roles in Australia. This repo
 documents five hands-on projects built with real Australian datasets, each one
 covering the full workflow: data sourcing → cleaning → analysis → interactive
 dashboard → documented findings.
 
-**Location**: Wollongong, NSW 
+**Location**: Wollongong, NSW | Open to roles in Illawarra, Newcastle, and Sydney
 
 **Core skills**: SQL, Python (pandas), Power BI, Tableau, IBM Cognos, Excel/Power
 Query, requirements elicitation, stakeholder management
@@ -20,7 +25,7 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 
 | # | Project | Focus | Status | Links |
 |---|---|---|---|---|
-| 1 | **Sydney vs Regional NSW Housing Affordability** | Data cleaning, SQL-style joins, Tableau dashboard, geo-comparison | ✅ Complete | [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
+| 1 | **Sydney vs Regional NSW Housing Affordability** | 3-year trend analysis, data cleaning, Tableau dashboard, geo-comparison | ✅ Complete | [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
 | 2 | **NSW Public Transport Delay Analysis** | Time-series analysis, operational analytics | 🔜 In progress | — |
 | 3 | **Healthcare Access Dashboard (AIHW)** | Public-sector data storytelling, Tableau | 🔜 Planned | — |
 | 4 | **Retail Sales Forecasting** | Python, simple predictive modelling | 🔜 Planned | — |
@@ -30,17 +35,19 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 
 ## Project 1 highlights
 
-**Question**: Is Regional NSW actually more affordable than Sydney — for both
-renters and buyers?
+**Question**: Is the affordability gap between Sydney and Regional NSW widening
+or narrowing — for both renters and buyers?
 
-Analysed 120 NSW LGAs combining DCJ rent/sales data with 2021 Census household
-income to compute price-to-income and rent-to-income affordability ratios.
+Analysed 120+ NSW LGAs across three years (2024–2026), combining DCJ rent/sales
+data with 2021 Census household income to compute price-to-income and
+rent-to-income affordability ratios.
 
-**Key finding**: Regional NSW isn't uniformly affordable — lifestyle-driven
-markets like Byron and Tweed rank among the *least* affordable LGAs in the
-state, rivaling inner Sydney suburbs. Best value is concentrated in inland
-regional centres (Cobar, Broken Hill, Moree Plains), with the caveat that
-low prices there often reflect a thin local job market.
+**Key finding**: Both regions are becoming less affordable at almost exactly
+the same rate — the Sydney/Regional gap has stayed flat (~3.17x) across all
+three years — but rental stress is climbing *faster* in Regional NSW (+14%)
+than Sydney (+9%). Lifestyle-driven markets like Byron and Tweed remain the
+standout exception, ranking among the state's least affordable LGAs and
+rivaling inner Sydney.
 
 [Full write-up →](./01_housing_affordability/README.md)
 
