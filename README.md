@@ -5,15 +5,15 @@
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
 
-ICT Systems Support Professional (8+ years across aged care systems, enterprise ICT,
+ICT Systems and Data Analyst Professional (8+ years across IT , enterprise ICT , aged care systems,
 and IT support) transitioning into data analytics roles in Australia. This repo
 documents five hands-on projects built with real Australian datasets, each one
 covering the full workflow: data sourcing → cleaning → analysis → interactive
 dashboard → documented findings.
 
-**Location**: Wollongong, NSW | Open to roles in Illawarra, Newcastle, and Sydney
+**Location**: Wollongong, NSW 
 
-**Core skills**: SQL, Python (pandas), Power BI, Tableau, IBM Cognos, Excel/Power
+**Core skills**: SQL, Python, Power BI, Tableau, IBM Cognos, Excel/Power
 Query, requirements elicitation, stakeholder management
 
 **Credentials**: MBA (Lean Operations & Systems) · BTech Computer Science ·

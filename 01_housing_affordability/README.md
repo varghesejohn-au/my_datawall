@@ -7,11 +7,6 @@
 
 **Live dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1)
 
-**Skills demonstrated**: Python data cleaning (pandas) · multi-source data
-merging with real-world name/ID mismatches · derived metric design ·
-3-year trend analysis · interactive Tableau dashboarding · business-framed
-findings with explicitly stated data limitations
-
 ## Business question
 Is the affordability gap between Greater Sydney and Regional NSW widening or narrowing,
 and which regions offer the best value relative to local incomes — for renters and buyers?
@@ -99,12 +94,3 @@ affordability trajectory — with the tradeoff of a thinner local job market.
   2026) due to DCJ suppressing low-volume LGAs in some quarters for data
   reliability — trend comparisons use whichever LGAs are present in both years
   being compared.
-
-## How to reproduce
-1. Raw files already included in `data/raw/`: `rent-2024/2025/2026.xlsx`,
-   `sales-2024/2025/2026.xlsx`, `2021Census_G02_NSW_LGA.csv`,
-   `2021Census_geog_desc_1st_2nd_3rd_release.xlsx`
-2. Run `python analysis.py` — it cleans, merges, computes ratios for all
-   three years, and exports `affordability_clean.csv` (ready for Tableau)
-3. Open `affordability_clean.csv` in Tableau Public, build the dashboard per
-   `tableau_dashboard_notes.md`
