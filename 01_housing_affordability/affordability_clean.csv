@@ -1,0 +1,121 @@
+lga,region_group,median_weekly_rent,median_sale_price,median_household_income,year,annual_rent,price_to_income_ratio,rent_to_income_ratio,in_rental_stress,severely_unaffordable
+Bayside,Greater Sydney,895.0,909000.0,101868,2026,46540.0,8.92,0.457,True,True
+Blacktown,Greater Sydney,660.0,1120000.0,109564,2026,34320.0,10.22,0.313,True,True
+Blue Mountains,Greater Sydney,630.0,1050000.0,91312,2026,32760.0,11.5,0.359,True,True
+Burwood,Greater Sydney,820.0,1050000.0,97084,2026,42640.0,10.82,0.439,True,True
+Camden,Greater Sydney,760.0,1165000.0,122356,2026,39520.0,9.52,0.323,True,True
+Campbelltown,Greater Sydney,600.0,970000.0,88400,2026,31200.0,10.97,0.353,True,True
+Canada Bay,Greater Sydney,880.0,1450000.0,123292,2026,45760.0,11.76,0.371,True,True
+Canterbury-Bankstown,Greater Sydney,650.0,1300000.0,80912,2026,33800.0,16.07,0.418,True,True
+Central Coast,Greater Sydney,650.0,980000.0,78364,2026,33800.0,12.51,0.431,True,True
+Cumberland,Greater Sydney,650.0,795000.0,87256,2026,33800.0,9.11,0.387,True,True
+Fairfield,Greater Sydney,600.0,1260000.0,72280,2026,31200.0,17.43,0.432,True,True
+Georges River,Greater Sydney,730.0,1115000.0,103532,2026,37960.0,10.77,0.367,True,True
+Hawkesbury,Greater Sydney,660.0,1110000.0,102960,2026,34320.0,10.78,0.333,True,True
+Hornsby,Greater Sydney,730.0,1725000.0,125684,2026,37960.0,13.72,0.302,True,True
+Hunters Hill,Greater Sydney,850.0,2220000.0,155896,2026,44200.0,14.24,0.284,False,True
+Inner West,Greater Sydney,750.0,1685000.0,121680,2026,39000.0,13.85,0.321,True,True
+Ku-Ring-Gai,Greater Sydney,940.0,2443000.0,157976,2026,48880.0,15.46,0.309,True,True
+Lane Cove,Greater Sydney,850.0,1231000.0,145652,2026,44200.0,8.45,0.303,True,True
+Liverpool,Greater Sydney,670.0,1069000.0,94588,2026,34840.0,11.3,0.368,True,True
+Mosman,Greater Sydney,850.0,1655000.0,150384,2026,44200.0,11.01,0.294,False,True
+North Sydney,Greater Sydney,850.0,1418000.0,131248,2026,44200.0,10.8,0.337,True,True
+Northern Beaches,Greater Sydney,920.0,2171000.0,134784,2026,47840.0,16.11,0.355,True,True
+Parramatta,Greater Sydney,725.0,810000.0,106652,2026,37700.0,7.59,0.353,True,True
+Penrith,Greater Sydney,620.0,1070000.0,98956,2026,32240.0,10.81,0.326,True,True
+Randwick,Greater Sydney,899.0,1700000.0,119860,2026,46748.0,14.18,0.39,True,True
+Ryde,Greater Sydney,780.0,964000.0,109096,2026,40560.0,8.84,0.372,True,True
+Strathfield,Greater Sydney,720.0,750000.0,109460,2026,37440.0,6.85,0.342,True,True
+Sutherland Shire,Greater Sydney,790.0,1550000.0,118976,2026,41080.0,13.03,0.345,True,True
+Sydney,Greater Sydney,894.0,1050000.0,115024,2026,46488.0,9.13,0.404,True,True
+The Hills Shire,Greater Sydney,825.0,1750000.0,147212,2026,42900.0,11.89,0.291,False,True
+Waverley,Greater Sydney,1100.0,1800000.0,148408,2026,57200.0,12.13,0.385,True,True
+Willoughby,Greater Sydney,850.0,2089000.0,132912,2026,44200.0,15.72,0.333,True,True
+Wollondilly,Greater Sydney,650.0,1025000.0,111852,2026,33800.0,9.16,0.302,True,True
+Woollahra,Greater Sydney,1050.0,3125000.0,165984,2026,54600.0,18.83,0.329,True,True
+Cessnock,Regional NSW,580.0,750000.0,77636,2026,30160.0,9.66,0.388,True,True
+Kiama,Regional NSW,750.0,1430000.0,95368,2026,39000.0,14.99,0.409,True,True
+Lake Macquarie,Regional NSW,670.0,940000.0,84396,2026,34840.0,11.14,0.413,True,True
+Maitland,Regional NSW,625.0,810000.0,91832,2026,32500.0,8.82,0.354,True,True
+Newcastle,Regional NSW,650.0,995000.0,91520,2026,33800.0,10.87,0.369,True,True
+Port Stephens,Regional NSW,630.0,875000.0,71344,2026,32760.0,12.26,0.459,True,True
+Shellharbour,Regional NSW,730.0,922000.0,85644,2026,37960.0,10.77,0.443,True,True
+Wollongong,Regional NSW,680.0,1050000.0,87464,2026,35360.0,12.0,0.404,True,True
+Albury,Regional NSW,495.0,663000.0,74360,2026,25740.0,8.92,0.346,True,True
+Armidale Regional,Regional NSW,480.0,600000.0,73008,2026,24960.0,8.22,0.342,True,True
+Ballina,Regional NSW,750.0,1020000.0,74308,2026,39000.0,13.73,0.525,True,True
+Bathurst Regional,Regional NSW,535.0,699000.0,82420,2026,27820.0,8.48,0.338,True,True
+Bega Valley,Regional NSW,550.0,805000.0,62400,2026,28600.0,12.9,0.458,True,True
+Bellingen,Regional NSW,550.0,875000.0,62244,2026,28600.0,14.06,0.459,True,True
+Berrigan,Regional NSW,400.0,426000.0,58656,2026,20800.0,7.26,0.355,True,True
+Bland,Regional NSW,440.0,392000.0,68952,2026,22880.0,5.69,0.332,True,False
+Blayney,Regional NSW,520.0,630000.0,80444,2026,27040.0,7.83,0.336,True,True
+Broken Hill,Regional NSW,328.0,235000.0,60996,2026,17056.0,3.85,0.28,False,False
+Byron,Regional NSW,900.0,1421000.0,83304,2026,46800.0,17.06,0.562,True,True
+Cabonne,Regional NSW,450.0,550000.0,79976,2026,23400.0,6.88,0.293,False,True
+Clarence Valley,Regional NSW,520.0,693000.0,58396,2026,27040.0,11.87,0.463,True,True
+Cobar,Regional NSW,290.0,293000.0,90480,2026,15080.0,3.24,0.167,False,False
+Coffs Harbour,Regional NSW,620.0,860000.0,70876,2026,32240.0,12.13,0.455,True,True
+Coolamon,Regional NSW,440.0,462000.0,68120,2026,22880.0,6.78,0.336,True,True
+Gundagai,Regional NSW,420.0,500000.0,58864,2026,21840.0,8.49,0.371,True,True
+Cowra,Regional NSW,398.0,450000.0,57824,2026,20696.0,7.78,0.358,True,True
+Western Plains Regional,Regional NSW,550.0,635000.0,83044,2026,28600.0,7.65,0.344,True,True
+Dungog,Regional NSW,550.0,895000.0,77220,2026,28600.0,11.59,0.37,True,True
+Edward River,Regional NSW,365.0,440000.0,64480,2026,18980.0,6.82,0.294,False,True
+Eurobodalla,Regional NSW,570.0,770000.0,60684,2026,29640.0,12.69,0.488,True,True
+Federation,Regional NSW,455.0,484000.0,61724,2026,23660.0,7.84,0.383,True,True
+Forbes,Regional NSW,408.0,460000.0,65468,2026,21216.0,7.03,0.324,True,True
+Gilgandra,Regional NSW,325.0,300000.0,59748,2026,16900.0,5.02,0.283,False,False
+Glen Innes Severn,Regional NSW,380.0,437000.0,48568,2026,19760.0,9.0,0.407,True,True
+Goulburn Mulwaree,Regional NSW,500.0,690000.0,76232,2026,26000.0,9.05,0.341,True,True
+Greater Hume Shire,Regional NSW,450.0,595000.0,73840,2026,23400.0,8.06,0.317,True,True
+Griffith,Regional NSW,495.0,600000.0,90376,2026,25740.0,6.64,0.285,False,True
+Gunnedah,Regional NSW,500.0,515000.0,80964,2026,26000.0,6.36,0.321,True,True
+Gwydir,Regional NSW,300.0,290000.0,53508,2026,15600.0,5.42,0.292,False,False
+Hay,Regional NSW,275.0,260000.0,64272,2026,14300.0,4.05,0.222,False,False
+Hilltops,Regional NSW,450.0,505000.0,61100,2026,23400.0,8.27,0.383,True,True
+Inverell,Regional NSW,420.0,469000.0,60476,2026,21840.0,7.76,0.361,True,True
+Junee,Regional NSW,400.0,495000.0,72696,2026,20800.0,6.81,0.286,False,True
+Kempsey,Regional NSW,490.0,620000.0,56420,2026,25480.0,10.99,0.452,True,True
+Kyogle,Regional NSW,480.0,572000.0,51116,2026,24960.0,11.19,0.488,True,True
+Lachlan,Regional NSW,350.0,300000.0,63336,2026,18200.0,4.74,0.287,False,False
+Leeton,Regional NSW,400.0,433000.0,73684,2026,20800.0,5.88,0.282,False,False
+Lismore,Regional NSW,550.0,705000.0,68588,2026,28600.0,10.28,0.417,True,True
+Lithgow,Regional NSW,445.0,565000.0,62192,2026,23140.0,9.08,0.372,True,True
+Liverpool Plains,Regional NSW,425.0,408000.0,60580,2026,22100.0,6.73,0.365,True,True
+Lockhart,Regional NSW,455.0,420000.0,67340,2026,23660.0,6.24,0.351,True,True
+Mid-Coast,Regional NSW,520.0,730000.0,55120,2026,27040.0,13.24,0.491,True,True
+Mid-Western Regional,Regional NSW,598.0,700000.0,77272,2026,31096.0,9.06,0.402,True,True
+Moree Plains,Regional NSW,400.0,310000.0,79248,2026,20800.0,3.91,0.262,False,False
+Murray River,Regional NSW,535.0,620000.0,65520,2026,27820.0,9.46,0.425,True,True
+Murrumbidgee,Regional NSW,365.0,350000.0,72852,2026,18980.0,4.8,0.261,False,False
+Muswellbrook,Regional NSW,538.0,603000.0,84656,2026,27976.0,7.12,0.33,True,True
+Nambucca,Regional NSW,550.0,692000.0,50752,2026,28600.0,13.63,0.564,True,True
+Narrabri,Regional NSW,440.0,430000.0,77896,2026,22880.0,5.52,0.294,False,False
+Narrandera,Regional NSW,380.0,375000.0,61568,2026,19760.0,6.09,0.321,True,True
+Narromine,Regional NSW,400.0,465000.0,68016,2026,20800.0,6.84,0.306,True,True
+Oberon,Regional NSW,455.0,736000.0,74932,2026,23660.0,9.82,0.316,True,True
+Orange,Regional NSW,570.0,730000.0,86580,2026,29640.0,8.43,0.342,True,True
+Parkes,Regional NSW,400.0,450000.0,69472,2026,20800.0,6.48,0.299,False,True
+Port Macquarie-Hastings,Regional NSW,600.0,825000.0,65676,2026,31200.0,12.56,0.475,True,True
+Queanbeyan-Palerang Regional,Regional NSW,600.0,838000.0,119340,2026,31200.0,7.02,0.261,False,True
+Richmond Valley,Regional NSW,500.0,525000.0,59124,2026,26000.0,8.88,0.44,True,True
+Shoalhaven,Regional NSW,555.0,870000.0,65000,2026,28860.0,13.38,0.444,True,True
+Singleton,Regional NSW,605.0,780000.0,104832,2026,31460.0,7.44,0.3,False,True
+Snowy Monaro Regional,Regional NSW,500.0,638000.0,82836,2026,26000.0,7.7,0.314,True,True
+Snowy Valleys,Regional NSW,410.0,490000.0,67912,2026,21320.0,7.22,0.314,True,True
+Tamworth Regional,Regional NSW,485.0,620000.0,73632,2026,25220.0,8.42,0.343,True,True
+Temora,Regional NSW,420.0,470000.0,62556,2026,21840.0,7.51,0.349,True,True
+Tenterfield,Regional NSW,450.0,498000.0,46020,2026,23400.0,10.82,0.508,True,True
+Tweed,Regional NSW,800.0,1175000.0,67392,2026,41600.0,17.44,0.617,True,True
+Upper Hunter Shire,Regional NSW,500.0,590000.0,74308,2026,26000.0,7.94,0.35,True,True
+Upper Lachlan Shire,Regional NSW,455.0,685000.0,76180,2026,23660.0,8.99,0.311,True,True
+Uralla,Regional NSW,470.0,570000.0,69992,2026,24440.0,8.14,0.349,True,True
+Wagga Wagga,Regional NSW,530.0,680000.0,85176,2026,27560.0,7.98,0.324,True,True
+Walcha,Regional NSW,400.0,423000.0,63648,2026,20800.0,6.65,0.327,True,True
+Warren,Regional NSW,325.0,263000.0,68692,2026,16900.0,3.83,0.246,False,False
+Warrumbungle Shire,Regional NSW,355.0,310000.0,55536,2026,18460.0,5.58,0.332,True,False
+Weddin,Regional NSW,350.0,350000.0,54392,2026,18200.0,6.43,0.335,True,True
+Wentworth,Regional NSW,400.0,560000.0,72384,2026,20800.0,7.74,0.287,False,True
+Wingecarribee,Regional NSW,740.0,1160000.0,86996,2026,38480.0,13.33,0.442,True,True
+Yass Valley,Regional NSW,580.0,863000.0,119028,2026,30160.0,7.25,0.253,False,True
