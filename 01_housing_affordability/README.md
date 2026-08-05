@@ -1,6 +1,6 @@
 # Sydney vs Regional NSW Housing Affordability Analysis
 
-**Live dashboard**: https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject\_17858981785590/Dashboard1
+**Live dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1)
 
 ## Business question
 
