@@ -6,7 +6,7 @@ documents five hands-on projects built with real Australian datasets, each one
 covering the full workflow: data sourcing → cleaning → analysis → interactive
 dashboard → documented findings.
 
-**Location**: Wollongong, NSW | Open to roles in Illawarra, Newcastle, and Sydney
+**Location**: Wollongong, NSW 
 
 **Core skills**: SQL, Python (pandas), Power BI, Tableau, IBM Cognos, Excel/Power
 Query, requirements elicitation, stakeholder management
