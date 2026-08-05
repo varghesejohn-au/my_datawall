@@ -1,6 +1,6 @@
 # Varghese John — Data Portfolio
 
-ICT Systems Support Professional (8+ years across aged care systems, enterprise ICT,
+ICT Systems and Data Analyst Professional (8+ years across aged care systems, enterprise ICT,
 and IT support) transitioning into data analytics roles in Australia. This repo
 documents five hands-on projects built with real Australian datasets, each one
 covering the full workflow: data sourcing → cleaning → analysis → interactive
