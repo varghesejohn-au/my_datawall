@@ -5,9 +5,9 @@
 ![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?logo=tableau&logoColor=white)
 ![Data](https://img.shields.io/badge/Data-NSW%20DCJ%20%7C%20ABS%20Census-blue)
 
-**Live dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1)
-
 **📊 Findings summary**: [View key finding of this project](https://varghesejohn-au.github.io/my_datawall/01_housing_affordability/findings.html)
+
+**Live dashboard**: [View on Tableau Public](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1)
 
 ## Business question
 Is the affordability gap between Greater Sydney and Regional NSW widening or narrowing,
