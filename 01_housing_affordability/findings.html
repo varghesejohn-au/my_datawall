@@ -1678,15 +1678,63 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
-            <span>Sources: NSW DCJ Rent & Sales Reports (Issues 147, 151, latest available) · ABS Census 2021 (Table G02)</span>
-            <div class="footer-links">
-                <a href="https://github.com/varghesejohn-au/my_datawall/blob/main/01_housing_affordability/README.md" target="_blank" rel="noopener">Methodology & README</a>
-                <a href="https://dcj.nsw.gov.au/about-us/families-and-communities-statistics/housing-rent-and-sales.html" target="_blank" rel="noopener">DCJ Portal</a>
-            </div>
-        </footer>
+        <style>
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #5c6b73;
+    font-size: 14px;
+  }
 
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-links a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    margin: 0;
+    text-align: center; /* Set to 'left' if you prefer left alignment under the sources text */
+    font-size: 13px;
+    opacity: 0.8;
+  }
+</style>
+
+<!-- Footer Markup -->
+<footer class="footer">
+  <div class="footer-top">
+    <span>Sources: NSW DCJ Rent & Sales Reports (Issues 147, 151, latest available) </span>
+    
+    <div class="footer-links">
+      <a href="https://www.abs.gov.au/census/find-census-data/geopackages?release=2021&geography=AUST&table=G01&gda=GDA2020" target="_blank" rel="noopener">ABS Census 2021 (Table G02)</a>
+      <a href="https://github.com/varghesejohn-au/my_datawall/blob/main/01_housing_affordability/README.md" target="_blank" rel="noopener">Methodology & README</a>
+      <a href="https://dcj.nsw.gov.au/about-us/families-and-communities-statistics/housing-rent-and-sales.html" target="_blank" rel="noopener">DCJ Portal</a>
     </div>
+  </div>
+
+  <p class="copyright">&copy; 2026 Varghese John. All rights reserved.</p>
+</footer>
+
+
 
     <!-- Interactive Dashboard Scripting -->
     <script>
