@@ -25,7 +25,7 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 
 | # | Project | Focus | Status | Links |
 |---|---|---|---|---|
-| 1 | **Sydney vs Regional NSW Housing Affordability** | 3-year trend analysis, data cleaning, Tableau dashboard, geo-comparison | ✅ Complete | [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
+| 1 | **Sydney vs Regional NSW Housing Affordability** | 3-year trend analysis, data cleaning, Tableau dashboard, geo-comparison | ✅ Complete | [Project Findings](./findings.html) [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
 | 2 | **NSW Public Transport Delay Analysis** | Time-series analysis, operational analytics | 🔜 In progress | — |
 | 3 | **Healthcare Access Dashboard (AIHW)** | Public-sector data storytelling, Tableau | 🔜 Planned | — |
 | 4 | **Retail Sales Forecasting** | Python, simple predictive modelling | 🔜 Planned | — |
