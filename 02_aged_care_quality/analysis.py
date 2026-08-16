@@ -71,6 +71,51 @@ def _facility_key(df: pd.DataFrame) -> pd.Series:
     return (df["Service Name"].str.strip() + " | " + df["Provider Name"].str.strip())
 
 
+def _dedupe_facility_keys(df: pd.DataFrame, extra_grain_cols=None) -> pd.DataFrame:
+    """
+    A handful of facility names collide under Service Name + Provider Name --
+    i.e. the SAME name/provider pair appears more than once within a single
+    year's extract. There's no column available that reliably tells us
+    whether this is two physical wings of one site, a respite/permanent
+    split, or a genuine duplicate row in the source data.
+
+    Left alone, this silently blends two different facilities' numbers
+    together under one key wherever anything aggregates by facility_key --
+    e.g. an AVG() over "the same" facility_key in Tableau actually averages
+    two unrelated services, producing a misleading combined result for both.
+
+    Fix: append a deterministic " -- Site N" suffix to every row in a
+    colliding (year [+ extra_grain_cols], facility_key) group, ordered by
+    row position within that group. This stops the blending.
+
+    `extra_grain_cols` matters for re_dimension_detail specifically: that
+    table is long/tidy, with 12 legitimate rows per facility per year (one
+    per resident-experience dimension) -- those 12 rows are NOT collisions
+    and must not be split apart. Passing extra_grain_cols=["dimension"]
+    keeps the true grain intact, so only a genuine same-year/same-dimension
+    name collision (i.e. 2 rows for "Food quality" for the same key in the
+    same year) gets the Site N suffix.
+
+    CAVEAT (documented, not silently assumed): because trend / detail /
+    RE-dimension are read from different sheets, "Site 1" in one output is
+    only PRESUMED -- not guaranteed -- to be the same physical record as
+    "Site 1" in another output, or across years. This affects ~5 facility
+    names / ~10-13 rows nationally (<0.5% of the dataset) and does not
+    materially change any of the sector-level findings, but any user who
+    drills into one of these specific facilities should be aware cross-year
+    or cross-table matching for them is unreliable.
+    """
+    df = df.copy()
+    group_cols = ["year"] + (extra_grain_cols or []) + ["facility_key"]
+    dupe_mask = df.duplicated(subset=group_cols, keep=False)
+    if dupe_mask.any():
+        site_no = df[dupe_mask].groupby(group_cols).cumcount() + 1
+        df.loc[dupe_mask, "facility_key"] = (
+            df.loc[dupe_mask, "facility_key"] + " -- Site " + site_no.astype(str)
+        )
+    return df
+
+
 # ---------------------------------------------------------------------------
 # STEP 1: STAR RATINGS TREND (2023-2026)
 # ---------------------------------------------------------------------------
@@ -116,7 +161,7 @@ def build_star_ratings_trend() -> pd.DataFrame:
         df = load_star_ratings_year(year)
         frames.append(df)
         print(f"[INFO] Star Ratings {year}: {len(df)} facilities")
-    return pd.concat(frames, ignore_index=True)
+    return _dedupe_facility_keys(pd.concat(frames, ignore_index=True))
 
 
 # ---------------------------------------------------------------------------
@@ -192,7 +237,7 @@ def build_staffing_quality_detail() -> pd.DataFrame:
         df = load_detail_year(year)
         frames.append(df)
         print(f"[INFO] Detailed data {year}: {len(df)} facilities")
-    return pd.concat(frames, ignore_index=True)
+    return _dedupe_facility_keys(pd.concat(frames, ignore_index=True))
 
 
 # ---------------------------------------------------------------------------
@@ -258,7 +303,8 @@ def build_re_dimension_detail() -> pd.DataFrame:
         df = load_re_dimensions_year(year)
         frames.append(df)
         print(f"[INFO] RE dimensions {year}: {len(df)} facility-dimension rows")
-    return pd.concat(frames, ignore_index=True)
+    long_df = pd.concat(frames, ignore_index=True)
+    return _dedupe_facility_keys(long_df, extra_grain_cols=["dimension"])
 
 
 # ---------------------------------------------------------------------------
@@ -284,7 +330,7 @@ def build_benchmark_facilities(detail: pd.DataFrame, re_detail: pd.DataFrame, ye
     df = latest.merge(re_avg, on="facility_key", how="left")
 
     df = df[df["size"].isin(["Medium", "Large"])].copy()
-    df = df.dropna(subset=ADVERSE_MEASURE_COLS + ["re_avg_always_pct", "rn_minutes_actual"])
+    df = df.dropna(subset=ADVERSE_MEASURE_COLS + ["re_avg_always_pct", "rn_minutes_actual", "overall_stars"])
 
     for c in ADVERSE_MEASURE_COLS:
         # Negated: lower adverse-event % is better, so a lower raw value should
