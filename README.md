@@ -33,7 +33,7 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 
 ---
 
-## Project 1 highlights
+## Project 1: Sydney vs Regional NSW Housing Affordability highlights
 
 **Question**: Is the affordability gap between Sydney and Regional NSW widening
 or narrowing — for both renters and buyers?
@@ -53,7 +53,7 @@ rivaling inner Sydney.
 
 ---
 
-## Project 2 highlights
+## Project 2: Australian Aged Care Star Ratings Analysis (2023–2026) highlights
 
 **Question**: Where does the government's official star rating agree — and disagree —
 with what's actually happening on the ground for residents?
