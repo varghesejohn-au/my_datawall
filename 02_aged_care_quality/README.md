@@ -298,8 +298,8 @@ facilities can show 0% falls purely from having very few residents, which
 isn't a statistically reliable signal at that scale.
 
 **The result is striking: of the national top 20 facilities by actual
-composite performance, 16 are rated 4-star overall, only 3 are 5-star**
-(one has no published overall rating). The facilities genuinely excelling on
+composite performance, 16 are rated 4-star overall, only 4 are 5-star.**
+The facilities genuinely excelling on
 real outcomes and real staffing are disproportionately sitting one tier
 below the "official" top badge — concrete, quantified confirmation of the
 measurement-validity point above.
@@ -366,7 +366,22 @@ worth investigating further.
 - **No stable facility ID** — matching facilities across years uses Service
   Name + Provider Name, which breaks if a facility renames or changes
   ownership between quarters. This is the same category of limitation as the
-  LGA-name mismatches in Project 1.
+  LGA-name mismatches in Project 1. A consequence of this: 21 facility names
+  nationally collide under this key (the same name/provider pair appears more
+  than once within a single year's extract, generally two genuinely separate
+  services rather than a data-entry duplicate). These are disambiguated with a
+  deterministic `-- Site 1` / `-- Site 2` suffix, but the pairing of "Site 1"
+  across different output tables or different years is best-effort, not
+  guaranteed, since there's no column in the source data that explains why
+  the collision exists.
+- **2026 facility coverage is 84%, not 100%** — of the ~2,600 facilities with
+  any 2026 record, 2,180 (84.0%) have a complete published overall star
+  rating and are included in the audit-vs-outcome analysis and Dashboard 4's
+  facility selector; the remaining facilities either have a 2026 record with
+  no published overall rating yet (likely newly registered or mid-assessment
+  services) or no 2026 record at all (likely closures, mergers, or
+  deregistrations). These are excluded rather than shown with broken/blank
+  panels.
 - **2023 has no Detailed data sheet** — the staffing-minutes and quality-measure
   percentage analysis is necessarily limited to 2024–2026, not the full
   2023–2026 window used for the star-rating trend.

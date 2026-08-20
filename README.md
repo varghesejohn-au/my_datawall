@@ -26,7 +26,7 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 | # | Project | Focus | Status | Links |
 |---|---|---|---|---|
 | 1 | **Sydney vs Regional NSW Housing Affordability** | 3-year trend analysis, data cleaning, Tableau dashboard, geo-comparison | ✅ Complete | [Project Findings](https://varghesejohn-au.github.io/my_datawall/01_housing_affordability/findings.html) · [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
-| 2 | **NSW Public Transport Delay Analysis** | Time-series analysis, operational analytics | 🔜 In progress | — |
+| 2 | **Australian Aged Care Star Ratings Analysis (2023–2026)** | Government rating vs. actual resident-outcome data, data quality remediation, 4-dashboard Tableau workbook | ✅ Complete | [Code](./02_aged_care_star_ratings) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1) |
 | 3 | **Healthcare Access Dashboard (AIHW)** | Public-sector data storytelling, Tableau | 🔜 Planned | — |
 | 4 | **Retail Sales Forecasting** | Python, simple predictive modelling | 🔜 Planned | — |
 | 5 | **End-to-End Mini ETL Pipeline** | SQL database, Python ETL, deployed dashboard | 🔜 Planned | — |
@@ -50,6 +50,29 @@ standout exception, ranking among the state's least affordable LGAs and
 rivaling inner Sydney.
 
 [Full write-up →](./01_housing_affordability/README.md)
+
+---
+
+## Project 2 highlights
+
+**Question**: Where does the government's official star rating agree — and disagree —
+with what's actually happening on the ground for residents?
+
+Combined four years of Department of Health, Disability and Ageing quarterly star
+rating extracts (May 2023–2026) with facility-level staffing, resident-experience
+survey, and compliance/audit data, resolving duplicate facility identifiers and
+data quality issues along the way (see [data quality findings](./02_aged_care_star_ratings/data_quality_findings.md)
+for the full remediation log). Rather than just reporting the ratings themselves,
+the analysis is framed around divergence — facilities whose star rating over- or
+understates their actual resident-experience and compliance outcomes.
+
+The workbook ships as four linked dashboards:
+1. **National Overview** — trends in ratings, provider type, and staffing compliance, 2023–2026
+2. **What Actually Predicts Quality?** — correlating staffing and compliance against resident-experience outcomes
+3. **Audit & Quality Intelligence** — where ratings and real-world outcomes disagree, plus risk flags
+4. **Facility Report Card** — drill-down into any single facility's rating, resident-experience scores, and audit status
+
+[Full write-up →](./02_aged_care_star_ratings/README.md)
 
 ---
 

@@ -336,7 +336,7 @@ def build_benchmark_facilities(detail: pd.DataFrame, re_detail: pd.DataFrame, ye
         # Negated: lower adverse-event % is better, so a lower raw value should
         # produce a HIGHER (better) z-score contribution
         df[c + "_z"] = -(df[c] - df[c].mean()) / df[c].std()
-    df["staffing_z"] = (df["rn_minutes_actual"] - df["rn_minutes_actual"].mean()) / df["rn_minutes_actual"].std()
+    df["staffing_z"] = (df["rn_minutes_actual", "overall_stars"] - df["rn_minutes_actual"].mean()) / df["rn_minutes_actual"].std()
     df["re_z"] = (df["re_avg_always_pct"] - df["re_avg_always_pct"].mean()) / df["re_avg_always_pct"].std()
 
     z_cols = [c + "_z" for c in ADVERSE_MEASURE_COLS] + ["staffing_z", "re_z"]
