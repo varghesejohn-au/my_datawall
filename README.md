@@ -26,7 +26,7 @@ IBM Certified Data Scientist · Certificate III in Individual Support
 | # | Project | Focus | Status | Links |
 |---|---|---|---|---|
 | 1 | **Sydney vs Regional NSW Housing Affordability** | 3-year trend analysis, data cleaning, Tableau dashboard, geo-comparison | ✅ Complete | [Project Findings](https://varghesejohn-au.github.io/my_datawall/01_housing_affordability/findings.html) · [Code](./01_housing_affordability) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/Rentalproject_17858981785590/Dashboard1) |
-| 2 | **Australian Aged Care Star Ratings Analysis (2023–2026)** | Government rating vs. actual resident-outcome data, data quality remediation, 4-dashboard Tableau workbook | ✅ Complete | [Code](./02_aged_care_quality) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1) |
+| 2 | **Australian Aged Care Star Ratings Analysis (2023–2026)** | Government rating vs. actual resident-outcome data, data quality remediation, 4-dashboard Tableau workbook | ✅ Complete | [Project Findings](https://varghesejohn-au.github.io/my_datawall/02_aged_care_quality/summary_page/index.html) · [Code](./02_aged_care_quality) · [Live Dashboard](https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1) |
 | 3 | **Healthcare Access Dashboard (AIHW)** | Public-sector data storytelling, Tableau | 🔜 Planned | — |
 | 4 | **Retail Sales Forecasting** | Python, simple predictive modelling | 🔜 Planned | — |
 | 5 | **End-to-End Mini ETL Pipeline** | SQL database, Python ETL, deployed dashboard | 🔜 Planned | — |
