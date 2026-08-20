@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aged Care Quality Intelligence — independent analysis of Australian aged care star ratings, clinical outcomes, resident experience and audit risk, 2023–2026.">
+<title>Aged Care Quality Intelligence | Beyond the Star Rating</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scroll-progress" id="scroll-progress"></div>
+<header class="site-header" id="top">
+  <div class="container nav-inner">
+    <a class="brand" href="#top" aria-label="Aged Care Quality Intelligence home">
+      <span class="brand-mark"><i class="fa-solid fa-heart-pulse"></i></span>
+      <span><strong>Aged Care</strong><em>Quality Intelligence</em><small>Data · Insight · Better Outcomes</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#national-trends">Overview</a>
+      <a href="#regulatory-paradox">Paradox</a>
+      <a href="#audit-flags">Risk</a>
+      <a href="#state-rankings">States</a>
+      <a href="#facility-spotlights">Directory</a>
+      <a href="#business-actions">Recommendations</a>
+      <a href="#methodology">Methodology</a>
+    </nav>
+    <div class="header-resources">
+      <a class="resource-btn" href="https://github.com/varghesejohn-au/my_datawall/tree/main/02_aged_care_quality" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
+      <a class="resource-btn" href="https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-chart-column"></i><span>Tableau</span></a>
+      <a class="resource-btn resource-primary" href="https://www.health.gov.au/resources/collections/star-ratings-quarterly-data-extracts" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-landmark"></i><span>Source data</span></a>
+    </div>
+    <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#national-trends">Overview</a><a href="#regulatory-paradox">Paradox</a><a href="#audit-flags">Risk Intelligence</a><a href="#state-rankings">State Divergence</a><a href="#facility-spotlights">Facility Directory</a><a href="#business-actions">Recommendations</a><a href="#methodology">Methodology</a>
+  </div>
+</header>
+<main>
+<section class="hero-section">
+  <div class="hero-glow"></div>
+  <div class="container hero-layout">
+    <div class="hero-copy reveal">
+      <div class="eyebrow"><span></span> AUSTRALIA · 2023 — 2026</div>
+      <h1>Beyond the <span>Star Rating.</span><br>What does quality really look like?</h1>
+      <p class="hero-lead">An independent analysis of Australian residential aged care that connects official ratings with clinical outcomes, staffing, compliance and the lived experience of residents.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#national-trends">Explore the findings <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-outline" href="#facility-spotlights"><i class="fa-solid fa-magnifying-glass"></i> Search facilities</a>
+      </div>
+      <div class="trust-line"><span><i class="fa-solid fa-shield-heart"></i> Evidence-based</span><span><i class="fa-solid fa-link"></i> Published government data</span><span><i class="fa-solid fa-circle-info"></i> Correlation ≠ causation</span></div>
+    </div>
+    <div class="hero-visual reveal reveal-delay">
+      <div class="hero-image-wrap"><img src="images/hero_resident_caregiver.jpg" alt="Older Australian couple in an aged care setting" class="hero-image"></div>
+      <div class="hero-caption"><span class="quote-mark">“</span><div><strong>Better data. Smarter oversight.</strong><small>Keeping the resident at the centre of the analysis.</small></div></div>
+      <div class="floating-badge"><strong>2,180</strong><span>complete 2026 ratings</span></div>
+    </div>
+  </div>
+</section>
+<section class="kpi-section">
+ <div class="container">
+  <div class="section-kicker">STUDY AT A GLANCE</div>
+  <div class="kpi-grid">
+   <article class="kpi-card reveal"><div class="kpi-icon teal"><i class="fa-solid fa-star"></i></div><div><strong>3.85★</strong><span>National average · 2026</span><small>Flat vs 2025; matched facilities improved +0.21★</small></div></article>
+   <article class="kpi-card reveal"><div class="kpi-icon green"><i class="fa-solid fa-clock"></i></div><div><strong>77%</strong><span>Meeting RN targets</span><small>Up from 53% in the matched 2024–2026 analysis</small></div></article>
+   <article class="kpi-card risk reveal"><div class="kpi-icon red"><i class="fa-solid fa-arrow-trend-down"></i></div><div><strong>−0.48★</strong><span>Quality Measures trend</span><small>Matched facilities · 2024 → 2026</small></div></article>
+   <article class="kpi-card reveal"><div class="kpi-icon blue"><i class="fa-solid fa-building"></i></div><div><strong>2,180</strong><span>Facilities analysed</span><small>Complete 2026 ratings · 84% of facilities with 2026 records</small></div></article>
+   <article class="kpi-card reveal"><div class="kpi-icon gold"><i class="fa-solid fa-trophy"></i></div><div><strong>47</strong><span>Hidden Champions</span><small>≤3★ overall badge but top-quartile clinical outcomes</small></div></article>
+  </div>
+ </div>
+</section>
+<section class="meaning-strip">
+ <div class="container meaning-inner">
+  <div><span class="section-kicker">HOW TO READ THE NUMBERS</span><h2>A badge is a summary — the story is underneath.</h2></div>
+  <div class="meaning-items">
+   <div><strong>★ Overall rating</strong><span>Official composite badge.</span></div>
+   <div><strong>QM</strong><span>Clinical Quality Measures.</span></div>
+   <div><strong>RE</strong><span>Residents' Experience.</span></div>
+   <div><strong>Matched</strong><span>Same facilities compared over time.</span></div>
+  </div>
+ </div>
+</section>
+<section class="explore-section" id="explore">
+ <div class="container">
+  <div class="section-heading centered reveal"><div class="section-kicker">EXPLORE THE ANALYSIS</div><h2>Follow the evidence, not just the badge.</h2><p>Six analytical lenses turn the raw quarterly extracts into a clear business story.</p></div>
+  <div class="explore-grid">
+   <a class="explore-card image-card reveal" href="#national-trends"><img src="images/national_australia.jpg" alt="Sydney skyline representing national overview"><div class="explore-shade"></div><div class="explore-content"><span>01 · PERFORMANCE</span><h3>National Overview</h3><p>Trends, ratings, staffing and national benchmarks.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+   <a class="explore-card image-card reveal" href="#regulatory-paradox"><img src="images/regulatory_hands.jpg" alt="Hands representing resident experience and regulation"><div class="explore-shade"></div><div class="explore-content"><span>02 · OUTCOMES</span><h3>Regulatory Paradox</h3><p>Compliance improved while clinical outcomes declined.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+   <a class="explore-card image-card reveal" href="#audit-flags"><img src="images/audit_clinical.jpg" alt="Clinical tools representing audit risk intelligence"><div class="explore-shade"></div><div class="explore-content"><span>03 · RISK</span><h3>Audit Risk Intelligence</h3><p>Find facilities where the badge and underlying signals diverge.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+   <a class="explore-card image-card reveal" href="#state-rankings"><img src="images/state_australia.jpg" alt="Australian landscape representing state divergence"><div class="explore-shade"></div><div class="explore-content"><span>04 · GEOGRAPHY</span><h3>State Divergence</h3><p>Where official ranks and outcome performance separate.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+   <a class="explore-card image-card featured reveal" href="#facility-spotlights"><img src="images/hidden_gems_care.jpg" alt="Hands caring for an older person"><div class="explore-shade"></div><div class="explore-content"><span>05 · INTERACTIVE · 2,180 FACILITIES</span><h3>Facility Directory &amp; Report Cards</h3><p>Search, filter and inspect the evidence behind an individual facility.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+   <a class="explore-card image-card reveal" href="#business-actions"><img src="images/business_team.jpg" alt="Business team discussing recommendations"><div class="explore-shade"></div><div class="explore-content"><span>06 · ACTION</span><h3>Business Recommendations</h3><p>Translate findings into practical actions for providers, auditors and decision-makers.</p><i class="fa-solid fa-arrow-right"></i></div></a>
+  </div>
+ </div>
+</section>
+<section class="analysis-flow">
+ <div class="active analysis-section" id="national-trends">
+<div class="dashboard-title-box">
+<h2>National Overview &amp; Sector Trends (2024 vs 2026)</h2>
+<p>Evaluating macro-level rating performance using matched-facility tracking to eliminate entry/exit distortions.</p>
+</div>
+<div class="insight-alert">
+<i class="fa-solid fa-circle-info"></i>
+<div>
+<strong>Sector-Wide Insight:</strong> While overall stars, compliance ratings, and staffing averages are climbing across Australia's ~1,700-1,800 matched facilities, <strong>Quality Measures (QM) have declined sharply (-0.48★)</strong>. The percentage of facilities achieving 5-star clinical outcomes was cut in half, dropping from 22.6% to 11.6%.
+                    </div>
+</div>
+<div class="grid-2" style="margin-bottom: 3rem;">
+<div class="glass-card">
+<h3>Matched-Facility Star Rating Changes</h3>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                            Tracks identical facilities over time to identify true underlying quality shifts.
+                        </p>
+<div class="chart-container">
+<canvas id="chart-matched-trend"></canvas>
+</div>
+</div>
+<div class="glass-card" style="display: flex; flex-direction: column; justify-content: center;">
+<h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-list-check"></i> Key Trend Takeaways</h3>
+<ul style="list-style-type: none; display: flex; flex-direction: column; gap: 1rem; color: var(--text-secondary); font-size: 0.95rem;">
+<li>
+<i class="fa-solid fa-caret-right" style="color: var(--accent-primary); margin-right: 0.5rem;"></i>
+<strong>Staffing Improvements:</strong> Staffing scores rose by <strong>+0.40★</strong>, driven by strict targets (facilities meeting RN minutes grew from <strong>53% to 77%</strong>).
+                            </li>
+<li>
+<i class="fa-solid fa-caret-right" style="color: var(--accent-primary); margin-right: 0.5rem;"></i>
+<strong>Compliance Expansion:</strong> The audit compliance sub-rating gained <strong>+0.39★</strong>, reflecting a sector where nearly everyone passes.
+                            </li>
+<li>
+<i class="fa-solid fa-caret-right" style="color: var(--accent-danger); margin-right: 0.5rem;"></i>
+<strong>The Clinical Decline:</strong> Clinical Quality Measures (QM) dropped by <strong>-0.48★</strong> despite improvements in Compliance and Staffing — a divergence that warrants investigation. The published data alone cannot determine whether this reflects outcome deterioration, methodology change, or both.
+                            </li>
+<li>
+<i class="fa-solid fa-caret-right" style="color: var(--accent-primary); margin-right: 0.5rem;"></i>
+<strong>Sector Consolidation:</strong> The total national facility count declined from <strong>2,620 to 2,591</strong>, consistent with broader sector consolidation; the dataset does not establish the specific cause of each exit.
+                            </li>
+</ul>
+</div>
+</div>
+<div class="hidden-gems-tile reveal" id="hidden-gems">
+  <div class="hidden-gems-image"><img src="images/hidden_gems_care.jpg" alt="Older resident being supported by a care worker"></div>
+  <div class="hidden-gems-content">
+    <span class="section-kicker">A FINDING WORTH NOTICING</span>
+    <div class="hidden-gems-number">47</div>
+    <h3>Hidden Gems in the Data</h3>
+    <p>Facilities carrying a <strong>≤3★ overall badge</strong> while sitting in the <strong>top quartile for clinical outcomes</strong>. They are a useful counterpoint to facilities where the badge looks stronger than the underlying evidence.</p>
+    <button class="hidden-gems-btn" type="button" id="btn-hidden-gems"><i class="fa-solid fa-arrow-right"></i> Explore the 47 facilities</button>
+  </div>
+</div>
+<!-- Analyst Commentary Profile (MOVED HERE: Home / First Page alone) -->
+<div class="profile-section">
+<div class="profile-grid">
+<div class="profile-img-container">
+<img alt="Varghese John, ICT Systems &amp; Business Analyst" class="profile-img" src="images/analyst_profile.jpg"/>
+</div>
+<div>
+<span class="hero-tag">
+<i class="fa-solid fa-user-tie"></i> Analyst Commentary
+                            </span>
+<blockquote class="profile-quote">
+                                "An overall star badge is an overly simplistic filter. When choosing care for a loved one, families and auditors must look beyond the badge to check raw Quality Measures and individual Resident Experience dimensions."
+                            </blockquote>
+<div class="profile-author">Varghese John</div>
+<div class="profile-title">ICT Systems Analyst &amp; Aged Care Data Specialist</div>
+<div class="profile-desc">
+<p style="margin-bottom: 1rem;">
+                                    This quality intelligence portal provides a rigorous look at residential aged care in Australia, compiled directly from Department of Health quarterly extracts (2023–2026).
+                                </p>
+<p>
+                                    By contrasting regulatory inputs with actual clinical outcomes and resident satisfaction, the project exposes the design limitations of the current star rating system, providing families and providers with actionable, evidence-based insights.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="analysis-section" id="regulatory-paradox">
+<div class="dashboard-title-box">
+<h2>The Input vs. Lived Outcome Paradox</h2>
+<p>Investigating the correlation between standard regulatory inputs and the actual safety and comfort of residents.</p>
+</div>
+<div class="insight-alert insight-alert-warning">
+<i class="fa-solid fa-circle-exclamation"></i>
+<div>
+<strong>Key Paradox Finding:</strong> Staffing and compliance show <strong>very weak relationships with broad clinical outcomes</strong>, while compliance is almost completely disconnected from reported resident dignity. A facility can pass an audit while residents report a weaker lived experience.
+                    </div>
+</div>
+<div class="grid-2">
+<div class="glass-card">
+<h3>Resident Experience: The 2026 Weakest Links</h3>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                            National average percentage of residents answering "% Always" satisfied. <strong>Food quality is the clearest national resident-experience weak point</strong>.
+                        </p>
+<div class="chart-container">
+<canvas id="chart-res-dimensions"></canvas>
+</div>
+</div>
+<div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+<div>
+<h3>Statistical Disconnects (Correlations)</h3>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                Perfect correlation is 1.0; zero means completely unrelated. Values compiled from national extracts.
+                            </p>
+<div class="correlation-list">
+<div class="corr-item">
+<span class="corr-label">Staffing Gap vs Clinical Stars</span>
+<span class="corr-value">0.060</span>
+</div>
+<div class="corr-item">
+<span class="corr-label">Compliance Stars vs Clinical Stars</span>
+<span class="corr-value">0.067</span>
+</div>
+<div class="corr-item">
+<span class="corr-label">Compliance Stars vs Resident Dignity</span>
+<span class="corr-value">0.028</span>
+</div>
+<div class="corr-item">
+<span class="corr-label">Compliance Stars vs Fall Rates</span>
+<span class="corr-value">-0.021</span>
+</div>
+</div>
+</div>
+<div style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+<p><strong>Note on Acuity &amp; Selective Impact:</strong> While general staffing doesn't predict broad falls (0.000 correlation), RN minutes show a modest correlation with reduced medication issues (polypharmacy: 0.179; antipsychotic use: 0.085), showing that staffing minutes are a resourcing check rather than a safety proxy.</p>
+</div>
+</div>
+</div>
+</div>
+ <div class="analysis-section" id="audit-flags">
+<div class="dashboard-title-box">
+<span class="section-kicker">WHERE THE DATA RAISES CONCERNS</span>
+<h2>Risk Intelligence: Where should someone take a closer look?</h2>
+<p>Five analyst-defined screening patterns highlight facilities where staffing, clinical outcomes, compliance, resident experience or the overall badge do not line up.</p>
+</div>
+<div class="insight-alert risk-alert">
+<i class="fa-solid fa-shield-halved"></i>
+<div>
+<strong>How to use this section:</strong> These are analyst-defined screening patterns, not official government risk classifications. Counts shown here come directly from the <strong>2,180 complete-rating facility records</strong> in the interactive dataset. Select a concern to see the actual facility names in a focused list.
+</div>
+</div>
+<div class="risk-explorer-grid">
+<div class="glass-card risk-chart-card">
+<div class="risk-card-head"><div><span class="section-kicker">LIVE FROM DIRECTORY DATA</span><h3>Risk Concerns · 2,180 Complete Records</h3><p>Each category is calculated from the core facility records used by this site. A facility may appear in more than one concern category.</p></div><button class="risk-view-all" data-risk-filter="__any__"><i class="fa-solid fa-list"></i> See facilities needing a look</button></div>
+<div class="chart-container risk-chart-wrap"><canvas id="chart-risk-flags"></canvas></div>
+</div>
+<div class="glass-card risk-detail-card">
+<div class="risk-card-head"><div><span class="section-kicker">CLICK TO EXPLORE</span><h3><i class="fa-solid fa-circle-exclamation"></i> Real Concerns in the Data</h3><p>Select a category to open the facility names behind the finding.</p></div></div>
+<div class="risk-category-list" id="risk-category-list"></div>
+<div class="risk-definition-box"><strong>What is a risk concern?</strong><p>A concern means the facility meets one of the project's five screening conditions. These are prompts for investigation—not a severity score, a safety judgement or a government risk rating.</p></div>
+</div>
+</div>
+</div>
+ <div class="analysis-section" id="facility-spotlights">
+<div class="directory-heading">
+<div class="dashboard-title-box">
+<h2>Facility Directory &amp; Report Cards</h2>
+<p>Search and explore <strong>2,180 facilities</strong> with complete 2026 ratings. Compare the headline badge with the underlying evidence, then open a facility report.</p>
+</div>
+<div class="directory-summary" aria-label="Directory coverage">
+<div><strong>2,180</strong><span>Facilities with complete<br>2026 ratings</span></div>
+<div><strong>84%</strong><span>of facilities with<br>2026 records</span></div>
+</div>
+</div>
+<div class="spotlights-grid">
+<!-- Left Column: Search controls, tabs, and results table -->
+<div style="display: flex; flex-direction: column; gap: 1.5rem; width: 100%;">
+<div class="glass-card" style="padding: 1.5rem; margin-bottom: 0;">
+<div class="directory-controls">
+<div class="search-input-wrapper">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input class="search-input" id="directory-search" placeholder="Search by facility, provider, state or ownership..." type="text"/>
+</div>
+<select class="search-select" id="directory-state"><option value="">All States</option><option value="NSW">NSW</option><option value="VIC">VIC</option><option value="QLD">QLD</option><option value="SA">SA</option><option value="WA">WA</option><option value="TAS">TAS</option><option value="ACT">ACT</option><option value="NT">NT</option></select>
+<select class="search-select" id="directory-type"><option value="">All Ownership Types</option><option value="Government">Government</option><option value="Not for Profit">Not for Profit</option><option value="Private for Profit">Private for Profit</option></select>
+<select class="search-select" id="directory-alignment"><option value="">All analytical alignment</option><option value="Potentially over-rated">Potentially over-rated</option><option value="Potentially under-rated">Potentially under-rated</option><option value="Aligned">Aligned</option></select>
+<select class="search-select" id="directory-rating"><option value="">All star ratings</option><option value="5">5★</option><option value="4">4★</option><option value="3">3★</option><option value="2">2★</option><option value="1">1★</option></select>
+<select class="search-select" id="directory-risk"><option value="">All analytical concerns</option><option value="__any__">Any concern</option><option value="adequately_staffed_poor_outcomes">Adequately staffed, poor outcomes</option><option value="high_compliance_dignity_gap">Compliance / dignity gap</option><option value="persistent_food_failure">Persistent food failure</option><option value="understaffed_good_outcomes">Understaffed, good outcomes</option><option value="five_star_low_qm">5★ overall, poor Quality Measures</option></select>
+<select class="search-select" id="directory-sort"><option value="relevance">Sort: Relevance</option><option value="rating_desc">Rating: high → low</option><option value="rating_asc">Rating: low → high</option><option value="alignment">Alignment</option><option value="resident_desc">Resident Experience: high → low</option><option value="qm_asc">Quality Measures: low → high</option><option value="outcome_desc">Clinical outcome: high → low</option></select>
+</div>
+<div class="directory-explainer"><div><strong>Analytical alignment</strong><span><b>Potentially over-rated</b> = badge stronger than underlying outcome evidence · <b>Potentially under-rated</b> = outcome evidence stronger than badge · <b>Aligned</b> = no material divergence identified by this analysis.</span></div><button class="dir-clear-risk" id="btn-clear-risk" type="button"><i class="fa-solid fa-rotate-left"></i> Reset view</button></div>
+<div class="directory-count" id="directory-count" aria-live="polite">Loading facility registry…</div><div class="table-wrapper">
+<table class="directory-table">
+<thead>
+<tr>
+<th>Facility &amp; Provider</th>
+<th>State</th>
+<th>Overall Rating</th>
+<th>Analytical Alignment</th>
+<th>Key Evidence</th>
+<th>Report</th>
+</tr>
+</thead>
+<tbody id="directory-tbody">
+<!-- Dynamic rows will be inserted here -->
+</tbody>
+</table>
+<div id="directory-empty" style="display: none; padding: 3rem; text-align: center; color: var(--text-muted);">
+<i class="fa-solid fa-circle-info" style="font-size: 2rem; margin-bottom: 1rem; color: var(--accent-primary);"></i>
+<p>No matching facilities found. Try adjusting your filters or spelling.</p>
+</div>
+</div>
+<div class="directory-pagination" id="directory-pagination" aria-label="Facility directory pagination"></div>
+</div>
+</div>
+</div>
+</div>
+ <div class="analysis-section" id="state-rankings">
+<div class="dashboard-title-box">
+<h2>State-by-State Rank Divergence</h2>
+<p>Evaluating state performance by comparing official badge ranks against actual clinical outcome ranks.</p>
+</div>
+<div class="insight-alert">
+<i class="fa-solid fa-map-location-dot"></i>
+<div>
+<strong>Key State Finding:</strong> <strong>NSW is the most under-rated state</strong> in Australia, ranking 5th on official stars but 2nd on actual clinical outcomes. Conversely, <strong>NT is the most over-rated state</strong>, ranking 1st officially but only 3rd on actual outcomes.
+                    </div>
+</div>
+<div class="grid-2">
+<div class="glass-card">
+<h3>Official Rank vs. Clinical Outcome Rank Divergence</h3>
+<p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                            Positive numbers indicate the state is under-rated on the official star badge; negative numbers indicate it is over-rated.
+                        </p>
+<div class="chart-container">
+<canvas id="chart-state-divergence"></canvas>
+</div>
+</div>
+<div class="glass-card" style="display: flex; flex-direction: column; justify-content: center;">
+<h3>Variance &amp; Provider Types</h3>
+<p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-top: 1rem; margin-bottom: 1.5rem;">
+                            ANOVA eta-squared analysis shows that provider type explains more than twice as much variance in the <strong>official star rating</strong> (η² = 0.059) as it does in <strong>actual clinical outcomes</strong> (η² = 0.026). 
+                        </p>
+<p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
+                            Government-run facilities score highest on the official overall badge (4.21★ avg) vs Not for Profit (3.85★) and Private for Profit (3.71★), but actual outcome differences are far smaller.
+                        </p>
+</div>
+</div>
+</div>
+ <div class="analysis-section" id="business-actions">
+<div class="dashboard-title-box">
+<span class="section-kicker">FROM EVIDENCE TO ACTION</span>
+<h2>What the Analysis Suggests Businesses Should Do</h2>
+<p>Explore practical actions for providers, auditors, families, sector leaders and policymakers. Each card opens a focused recommendation rather than presenting one long block of text.</p>
+</div>
+<div class="recommendation-grid">
+<button class="recommendation-card" data-rec="provider"> <img src="images/hidden_gems_care.jpg" alt="Care worker supporting an older resident"><span class="recommendation-overlay"></span><span class="recommendation-content"><span class="rec-audience">01 · PROVIDERS</span><strong>Improve care quality where it matters most</strong><small>Staffing, clinical outcomes and resident experience</small><i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="recommendation-card" data-rec="auditor"> <img src="images/audit_clinical.jpg" alt="Clinical and audit evidence"><span class="recommendation-overlay"></span><span class="recommendation-content"><span class="rec-audience">02 · AUDITORS</span><strong>Look beyond compliance</strong><small>Test the badge against outcomes and lived experience</small><i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="recommendation-card" data-rec="families"> <img src="images/hero_resident_caregiver.jpg" alt="Older resident with caregiver"><span class="recommendation-overlay"></span><span class="recommendation-content"><span class="rec-audience">03 · FAMILIES</span><strong>Look beyond the overall badge</strong><small>Ask what the underlying measures actually say</small><i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="recommendation-card" data-rec="leaders"> <img src="images/business_team.jpg" alt="Team discussing data and decisions"><span class="recommendation-overlay"></span><span class="recommendation-content"><span class="rec-audience">04 · SECTOR LEADERS</span><strong>Turn weak links into improvement priorities</strong><small>Use evidence to target resources and learning</small><i class="fa-solid fa-arrow-right"></i></span></button>
+<button class="recommendation-card" data-rec="policy"> <img src="images/national_australia.jpg" alt="Australian national setting"><span class="recommendation-overlay"></span><span class="recommendation-content"><span class="rec-audience">05 · POLICYMAKERS</span><strong>Align oversight with real outcomes</strong><small>Strengthen transparency around quality and lived experience</small><i class="fa-solid fa-arrow-right"></i></span></button>
+</div>
+<div class="recommendation-detail" id="recommendation-detail" aria-live="polite">
+<div class="recommendation-detail-copy"><span class="section-kicker" id="rec-detail-kicker">SELECT A CARD</span><h3 id="rec-detail-title">Evidence into action</h3><p id="rec-detail-text">Choose a recommendation above to see the relevant evidence and a practical next step.</p></div>
+<div class="recommendation-detail-metrics" id="rec-detail-metrics"></div>
+</div>
+</div>
+ <div class="analysis-section" id="methodology">
+<div class="dashboard-title-box">
+<h2>Methodology, Data Sources &amp; Caveats</h2>
+<p>How the analysis was built, what is directly supported by the source data, and where conclusions should be treated cautiously.</p>
+</div>
+<div class="method-tile-grid">
+  <article class="method-tile method-tile-source" tabindex="0" data-method-tile>
+    <img src="images/national_australia.jpg" alt="Australian landscape representing the government data source">
+    <div class="method-tile-shade"></div><div class="method-tile-label"><span>01</span><strong>Data Sources</strong><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+    <div class="method-tile-reveal"><span class="section-kicker">DATA SOURCES</span><h3>Government Star Ratings extracts</h3><p>Australian Government Department of Health, Disability and Ageing — Star Ratings quarterly data extracts. Four comparable quarters were used: May 2023, May 2024, May 2025 and May 2026.</p><a class="source-link" href="https://www.health.gov.au/resources/collections/star-ratings-quarterly-data-extracts" rel="noopener noreferrer" target="_blank">Open official data collection <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+  </article>
+  <article class="method-tile method-tile-method" tabindex="0" data-method-tile>
+    <img src="images/audit_clinical.jpg" alt="Clinical evidence representing the analytical methodology">
+    <div class="method-tile-shade"></div><div class="method-tile-label"><span>02</span><strong>Methodology</strong><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="method-tile-reveal"><span class="section-kicker">HOW IT WAS BUILT</span><h3>Matched facilities and comparative tests</h3><p>Facilities are tracked using Service Name + Provider Name because the published extracts do not provide a stable facility ID. The analysis tests trends, provider differences, staffing-vs-outcomes, compliance-vs-outcomes, weakest links, resident-experience dimensions and facility-level divergence.</p></div>
+  </article>
+  <article class="method-tile method-tile-coverage" tabindex="0" data-method-tile>
+    <img src="images/state_australia.jpg" alt="Australian state landscape representing analysis coverage">
+    <div class="method-tile-shade"></div><div class="method-tile-label"><span>03</span><strong>Coverage &amp; Measures</strong><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="method-tile-reveal"><span class="section-kicker">ANALYSIS COVERAGE</span><h3>What is actually measured?</h3><p>The 2023 extract contains Star Ratings but no Detailed Data sheet. Staffing-minute and underlying clinical-measure analysis therefore covers 2024–2026. In 2026, 2,180 facilities had a complete published overall rating.</p></div>
+  </article>
+  <article class="method-tile method-tile-caveat" tabindex="0" data-method-tile>
+    <img src="images/regulatory_hands.jpg" alt="Hands representing interpretation and regulatory caveats">
+    <div class="method-tile-shade"></div><div class="method-tile-label"><span>04</span><strong>Caveats &amp; Limits</strong><i class="fa-solid fa-triangle-exclamation"></i></div>
+    <div class="method-tile-reveal"><span class="section-kicker">READ BEFORE INTERPRETING</span><h3>Where caution is required</h3><p><strong>Correlation ≠ causation.</strong> The Staffing rating was redesigned in October 2025. Name/provider matching can break when services rename or change ownership. Analyst-defined risk flags are screening rules, not official government classifications.</p></div>
+  </article>
+</div>
+<div class="method-note-panel"><strong>Interpretation principle</strong><span>Where the data cannot distinguish genuine outcome change from a rating-methodology change, this site reports the observed pattern and flags the uncertainty rather than presenting causation as fact.</span></div>
+<div class="glass-card source-strip">
+<div>
+<strong>Full analytical project</strong>
+<span>The interactive Tableau workbook contains the underlying dashboards and facility-level analytical views.</span>
+</div>
+<a class="tab-btn" href="https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1" rel="noopener noreferrer" target="_blank"><i class="fa-solid fa-chart-pie"></i> Open Tableau Public</a>
+</div>
+</div>
+</section>
+
+</main>
+<div class="risk-facility-modal" id="risk-facility-modal" aria-hidden="true"><div class="risk-facility-backdrop" data-close-risk></div><div class="risk-facility-dialog" role="dialog" aria-modal="true" aria-labelledby="risk-facility-title"><div class="risk-facility-toolbar"><div><span class="section-kicker">CORE FACILITY DATA</span><h3 id="risk-facility-title">Facilities needing a closer look</h3><p id="risk-facility-subtitle">Actual facility records behind the selected concern.</p></div><button class="report-modal-close" id="risk-facility-close" aria-label="Close facility list"><i class="fa-solid fa-xmark"></i></button></div><div class="risk-facility-tools"><div class="search-input-wrapper"><i class="fa-solid fa-magnifying-glass"></i><input class="search-input" id="risk-facility-search" placeholder="Search these facilities..." type="text"/></div><span id="risk-facility-count" class="risk-facility-count"></span></div><div class="risk-facility-list" id="risk-facility-list"></div></div></div>
+<div class="report-modal" id="report-modal" aria-hidden="true"><div class="report-modal-backdrop" data-close-report></div><div class="report-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="report-modal-title"><div class="report-modal-toolbar"><div class="report-modal-context"><span class="report-modal-kicker"><i class="fa-solid fa-id-card"></i> Facility intelligence report</span><span class="report-modal-hint">2026 published rating &amp; underlying quality indicators</span></div><button class="report-modal-close" id="report-modal-close" aria-label="Close facility report"><i class="fa-solid fa-xmark"></i></button></div><div class="report-modal-scroll"><div class="report-modal-card" id="report-card-panel"></div></div></div></div>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="#top"><span class="brand-mark"><i class="fa-solid fa-heart-pulse"></i></span><span><strong>Aged Care</strong><em>Quality Intelligence</em></span></a><p>Independent analysis of Australian aged care star ratings and underlying quality signals.</p></div><div><strong>Scope</strong><span>May 2023 – May 2026</span><span>2,180 complete 2026 ratings</span><span>1,671 matched facilities · 2024 → 2026</span></div><div><strong>Sources</strong><a href="https://www.health.gov.au/resources/collections/star-ratings-quarterly-data-extracts" target="_blank" rel="noopener noreferrer">Australian Government data</a><a href="https://github.com/varghesejohn-au/my_datawall/tree/main/02_aged_care_quality" target="_blank" rel="noopener noreferrer">GitHub project</a><a href="https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1" target="_blank" rel="noopener noreferrer">Tableau Public</a></div><div><strong>Interpretation</strong><span>Observational analysis.</span><span>Correlation does not imply causation.</span><span>Published data may reflect methodology changes.</span></div></div><div class="container footer-bottom"><span>© 2026 Varghese John. All rights reserved</span></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
