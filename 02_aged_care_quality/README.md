@@ -406,20 +406,4 @@ worth investigating further.
   very small facilities); these are excluded from the relevant calculations
   rather than imputed.
 
-## How to reproduce
-1. Raw files in `data/raw/`: `star-ratings-2023/2024/2025/2026.xlsx`
-2. Run `python analysis.py` — outputs land in `output/`:
-   - `star_ratings_trend.csv` (2023–2026, summary level)
-   - `staffing_quality_detail.csv` (2024–2026, care minutes + quality measure
-     detail + weakest-link diagnostic)
-   - `re_dimension_detail.csv` (2024–2026, long format, 12 resident-experience
-     dimensions x facilities x years)
-   - `benchmark_facilities.csv` (2026, composite actual-performance score,
-     Medium/Large facilities only)
-   - `matched_trend.csv` (2024→2026 matched-facility sub-rating changes)
-   - `facility_audit_intelligence.csv` (2026, one row per facility: rating
-     vs outcome residual, rating classification, all 5 risk flags, hidden
-     champion flag)
-   - `state_rank_divergence.csv` (official rating rank vs actual outcome
-     rank, all 8 states/territories)
-3. Open all seven CSVs in Tableau Public — see `tableau_dashboard_notes.md` for the build plan
+
