@@ -77,7 +77,7 @@ overall but poor Quality Measures, RN minutes vs antipsychotic use at
 they diverged — most notably, the parallel analysis described Quality
 Measures as showing "no significant improvement" while our matched-facility
 calculation shows a clear **decline** (-0.48 stars), and our
-"persistent food failure" count (191) is much lower than a parallel estimate
+"persistent food failure" count (177) is much lower than a parallel estimate
 (707), because we required two consecutive low-scoring years rather than
 one — this analysis reports its own number with its methodology stated
 explicitly, rather than adopting an external claim without being able to
@@ -110,7 +110,7 @@ verify its exact definition.
   regulatory audit and the lived resident experience appear to be measuring
   almost entirely different things.
 - **Staffing is disproportionately the weak link for struggling facilities.**
-  Nationally, Staffing is a facility's lowest-scoring sub-rating 37.7% of the
+  Nationally, Staffing is a facility's lowest-scoring sub-rating 40.7% of the
   time. Restricted to facilities rated ≤3 stars overall, that jumps to
   **56.9%** — for facilities that are genuinely struggling, staffing is by
   far the most likely culprit. Compliance is almost never the weak link
@@ -243,14 +243,16 @@ at the opposite end: rated 1st officially but only 3rd on actual outcomes.
 
 Five explicit, self-defined risk categories (thresholds are our own choices,
 documented here — not inherited from any external source), computed on the
-2026 data:
+2,180 facilities with a complete 2026 overall rating (the same scope as the
+audit-vs-outcome analysis and Dashboard 4's facility selector — see Known
+data limitations below):
 
 | Risk flag | Facilities | % | Definition |
 |---|---|---|---|
-| Adequately staffed, poor outcomes | 498 | 19.2% | Met RN care-minute target AND Quality Measures rated 1-2 stars |
-| High compliance, resident dignity gap | 478 | 18.4% | Compliance = 5 stars AND bottom-quartile resident-reported dignity (Respect/Feel Heard/Feels Like Home) |
-| Persistent food failure | 191 | 7.4% | Bottom-quartile Food score in **both** 2025 and 2026 (two consecutive low scores, not one) |
-| Understaffed, good outcomes | 90 | 3.5% | Missed RN care-minute target AND Quality Measures rated 4-5 stars |
+| Adequately staffed, poor outcomes | 457 | 21.0% | Met RN care-minute target AND Quality Measures rated 1-2 stars |
+| High compliance, resident dignity gap | 457 | 21.0% | Compliance = 5 stars AND bottom-quartile resident-reported dignity (Respect/Feel Heard/Feels Like Home) |
+| Persistent food failure | 177 | 8.1% | Bottom-quartile Food score in **both** 2025 and 2026 (two consecutive low scores, not one) |
+| Understaffed, good outcomes | 63 | 2.9% | Missed RN care-minute target AND Quality Measures rated 4-5 stars |
 | 5-star overall, poor Quality Measures | 3 | 0.1% | The most direct "badge disagrees with clinical data" case |
 
 The 3 facilities carrying a 5-star overall badge alongside a 1-2 star
