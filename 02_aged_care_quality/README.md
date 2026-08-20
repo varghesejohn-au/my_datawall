@@ -1,6 +1,7 @@
 # Aged Care Star Ratings Analysis (National, 2023–2026) 
 
-**[Project Findings Page]**(https://varghesejohn-au.github.io/my_datawall/02_aged_care_quality/summary_page/index.html) - A summary on the key findings and snapshot of this project. 
+**[Project Findings Page](https://varghesejohn-au.github.io/my_datawall/02_aged_care_quality/summary_page/index.html)** - A summary on the key findings and snapshot of this project. 
+
 **[Live interactive dashboard →](https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1)**
 Four linked dashboards (tabbed navigation): National Overview, What Actually
 Predicts Quality?, Audit & Quality Intelligence, and Facility Report Card —
