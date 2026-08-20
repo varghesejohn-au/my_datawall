@@ -4,8 +4,7 @@
 > plan and is kept as a historical record of the design intent. Actual
 > implementation deviated in a few places — see the callouts marked
 > **[BUILT DIFFERENTLY]** below. For the current, validated state of the
-> data and dashboards, see `README.md` and `data_quality_findings.md`
-> rather than this file.
+> data and dashboards, see `README.md`.
 
 **Data sources to connect** (7 CSVs, each as a separate Text File connection):
 `star_ratings_trend.csv`, `staffing_quality_detail.csv`, `re_dimension_detail.csv`,
@@ -110,7 +109,8 @@ excellent" facilities.
 > gap (missing an `overall_stars` null-exclusion filter that
 > `facility_audit_intelligence` already had), which let one facility with
 > no published rating appear in Top Performers — found and fixed during
-> the Dashboards 1-3 cross-check; see `data_quality_findings.md` Issue 4.
+> the Dashboards 1-3 cross-check (the `overall_stars` dropna fix in
+> `build_benchmark_facilities()`, removing ~43 null-star rows).
 
 **Layout**: 3.1 (the scatter) large at top — this is the dashboard's anchor. 3.2 and 3.3 side by
 side in the middle. 3.4 (leaderboard table) at the bottom, full width. Headline text box:

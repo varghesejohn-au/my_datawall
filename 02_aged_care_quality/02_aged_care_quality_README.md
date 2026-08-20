@@ -1,5 +1,10 @@
 # Aged Care Star Ratings Analysis (National, 2023–2026)
 
+**[Live interactive dashboard →](https://public.tableau.com/app/profile/varghese.john4878/viz/AustraliaAgeCareStarRatingAnalysis/Dashboard1)**
+Four linked dashboards (tabbed navigation): National Overview, What Actually
+Predicts Quality?, Audit & Quality Intelligence, and Facility Report Card —
+see `tableau_dashboard_notes.md` for the build detail.
+
 ## Business question
 Are aged care homes actually improving over time, does provider type
 (not-for-profit vs private vs government) predict quality, and — the
@@ -417,4 +422,4 @@ worth investigating further.
      champion flag)
    - `state_rank_divergence.csv` (official rating rank vs actual outcome
      rank, all 8 states/territories)
-3. Open all three CSVs in Tableau Public — see `tableau_dashboard_notes.md` for the build plan
+3. Open all seven CSVs in Tableau Public — see `tableau_dashboard_notes.md` for the build plan
